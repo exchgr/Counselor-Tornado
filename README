@@ -1,0 +1,4 @@
+RECIPES
+["controllers", "frontend", "gems", "init", "models", "readme", "routes", "setup", "views"]
+PREFERENCES
+{:dev_webserver=>"thin", :prod_webserver=>"unicorn", :database=>"sqlite", :templates=>"haml", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"none", :authentication=>"devise", :devise_modules=>"invitable", :authorization=>"cancan", :form_builder=>"none", :starter_app=>"none"}
