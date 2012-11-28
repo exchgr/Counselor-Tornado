@@ -4,6 +4,19 @@ body {
     min-height: 480px;
 }
 
+.center {
+    text-align: center;
+}
+
+.btn-xlarge {
+    box-sizing: border-box;
+    padding: 70px 40px 40px 40px;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    font-size: 160px;
+}
+
 img#logo-big {
     display: block;
     margin: 60px auto;
