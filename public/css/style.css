@@ -1,0 +1,17 @@
+body {
+    background: #b00000 url('../img/noise.png');
+    color: #fff;
+    min-height: 480px;
+}
+
+img#logo-big {
+    display: block;
+    margin: 60px auto;
+    height: 100px;
+}
+
+form#login input[type=email], form#login input[type=password] {
+    box-sizing: border-box;
+    width: 100%;
+    height: 28px;
+}
