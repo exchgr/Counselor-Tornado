@@ -7,6 +7,10 @@ header {
     margin-bottom: 20px !important;
 }
 
+.white {
+    color: #fff;
+}
+
 .center {
     text-align: center;
 }
@@ -30,6 +34,12 @@ form#login input[type=email], form#login input[type=password] {
     box-sizing: border-box;
     width: 100%;
     height: 28px;
+}
+
+form.appt .btn-group .btn {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 @media (max-width: 568px) {
