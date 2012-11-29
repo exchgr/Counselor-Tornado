@@ -17,14 +17,18 @@
         <meta content='black' name='apple-mobile-web-app-status-bar-style' />
     </head>
     <body>
+        <header class="navbar navbar-static-top navbar-inverse">
+            <div class='navbar-inner'>
+                <h3>Log In</h3>
+            </div>
+        </header>
         <div class='container'>
             <div class='row'>
                 <div class='span4 offset4'>
                     <form action='main.html' id='login'>
-                        <h1>Log In</h1>
                         <input type='email' placeholder='Email'>
                         <input type='password' placeholder='Password'>
-                        <input type='submit' value='Log in' class='btn btn-danger pull-right clearfix'>
+                        <input type='submit' value='Log in' class='btn btn-inverse pull-right clearfix'>
                     </form>
                     <img src='img/logo-big.png' id='logo-big'>
                 </div>

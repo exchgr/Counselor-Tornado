@@ -1,7 +1,10 @@
 body {
     background: #b00000 url('../img/noise.png');
-    color: #fff;
     min-height: 480px;
+}
+
+header {
+    margin-bottom: 20px !important;
 }
 
 .center {
@@ -30,7 +33,7 @@ form#login input[type=email], form#login input[type=password] {
 }
 
 @media (max-width: 568px) {
-    h1 {
+    .navbar h3 {
         text-align: center;
     }
 }
