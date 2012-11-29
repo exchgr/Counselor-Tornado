@@ -25,11 +25,10 @@
         <div class='container'>
             <div class='row'>
                 <div class='span6 offset3'>
-                    <div class='center'>
-                        <a href='#new-appt' class='btn btn-large btn-xlarge btn-inverse' data-toggle='modal'>+</a>
-                        <br />
-                        <h4 class='white'>New Appointment</h4>
-                        <div class='modal hide fade' id='new-appt'>
+                    <a href='#new-appt' class='btn btn-inverse pull-right' data-toggle='modal'><i class='icon-plus-sign icon-white'></i> New Appointment</a>
+                    <br />
+                    <div class='modal hide fade' id='new-appt'>
+                        <div class='center'>
                             <div class='modal-header'>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h3>Request Appt.</h3>
@@ -51,6 +50,30 @@
                                 </form>
                             </div>
                         </div>
+                    </div>
+                    <br />
+                    <div class='well'>
+                        <table class='table table-hover'>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Block(s)</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id='appt-1'>
+                                    <td>Nov 29, 2012</td>
+                                    <td>1, 3</td>
+                                    <td><div class='pending'></div></td>
+                                </tr>
+                                <tr id='appt-2'>
+                                    <td>Nov 30, 2012</td>
+                                    <td>2</td>
+                                    <td><div class='approved'></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

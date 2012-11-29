@@ -42,6 +42,25 @@ form.appt .btn-group .btn {
     font-weight: bold;
 }
 
+.pending, .declined, .approved {
+    display: inline-block;
+    border-radius: 200px;
+    width: 12px;
+    height: 12px;
+}
+
+.pending {
+    background: #b58900;
+}
+
+.declined {
+    background: #dc322f;
+}
+
+.approved {
+    background: #859900;
+}
+
 @media (max-width: 568px) {
     .navbar h3 {
         text-align: center;
