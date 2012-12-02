@@ -43,7 +43,7 @@ gem "haml", ">= 3.1.7"
 gem "haml-rails", ">= 0.3.5", :group => :development
 gem "hpricot", ">= 0.8.6", :group => :development
 gem "ruby_parser", ">= 2.3.1", :group => :development
-gem "bootstrap-sass", ">= 2.1.0.0"
+gem "bootstrap-sass-rails", "~> 2.2.0"
 gem "devise", ">= 2.1.2"
 gem "devise_invitable", ">= 1.0.3"
 gem "cancan", ">= 1.6.8"
