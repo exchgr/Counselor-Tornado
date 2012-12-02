@@ -1,4 +1,6 @@
 CounselorTornado::Application.routes.draw do
+  devise_for :admins
+
   devise_for :counselors
 
   devise_for :users
