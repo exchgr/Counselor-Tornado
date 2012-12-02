@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title Tornado
+    = stylesheet_link_tag "application", controller.controller_name, :media => "all"
+    = javascript_include_tag "application", 'app-wide', controller.controller_name
+    = csrf_meta_tags
+  %body
+    %p.notice= notice
+    %p.alert= alert
+    = yield
