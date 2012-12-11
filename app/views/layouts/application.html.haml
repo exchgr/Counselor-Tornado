@@ -6,6 +6,9 @@
     = javascript_include_tag "application", 'app-wide', controller.controller_name
     = csrf_meta_tags
   %body
+    %header.navbar.navbar-static-top.navbar-inverse
+      .navbar-inner
+        %h3= yield :title
     - unless notice.nil? or notice.empty?
       %p.alert.notice
         = notice
