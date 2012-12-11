@@ -9,6 +9,11 @@
     %header.navbar.navbar-static-top.navbar-inverse
       .navbar-inner
         %h3= yield :title
+        .pull-right
+          - if current_user
+            = link_to 'Sign out', destroy_user_session_path, method: :delete
+          - else
+            = link_to 'Sign in', new_user_session_path
     - unless notice.nil? or notice.empty?
       %p.alert.notice
         = notice
