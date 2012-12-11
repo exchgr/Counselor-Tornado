@@ -6,6 +6,14 @@
     = javascript_include_tag "application", 'app-wide', controller.controller_name
     = csrf_meta_tags
   %body
-    %p.notice= notice
-    %p.alert= alert
+    - unless notice.nil? or notice.empty?
+      %p.alert.notice
+        = notice
+        %button.close{type: 'button', data: {dismiss: 'alert'}}
+          &times;
+    - unless alert.nil? or alert.empty?
+      %p.alert.alert-error
+        = alert
+        %button.close{type: 'button', data: {dismiss: 'alert'}}
+          &times;
     = yield
