@@ -1,7 +1,9 @@
 !!!
 %html
   %head
-    %title Tornado
+    %title
+      Tornado
+      = raw('&raquo; ') + yield(:title) unless yield(:title).blank?
     = stylesheet_link_tag "application", controller.controller_name, :media => "all"
     = javascript_include_tag "application", 'app-wide', controller.controller_name
     = csrf_meta_tags
