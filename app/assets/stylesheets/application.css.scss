@@ -15,7 +15,7 @@
 @import "twitter/bootstrap/responsive";
 
 body {
-    background: #b00000 url('../img/noise.png');
+    background: #b00000 image-url('noise.png');
     min-height: 480px;
 }
 
