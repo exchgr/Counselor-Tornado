@@ -6,4 +6,15 @@ form {
             height: 28px;
         }
     }
+
+    label {
+        display: inline;
+        vertical-align: text-top;
+    }
+}
+
+[class*='span'] {
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
 }
