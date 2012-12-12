@@ -27,21 +27,8 @@ header {
     @include box-sizing(border-box);
 }
 
-.white {
-    color: #fff;
-}
-
 .center {
     text-align: center;
-}
-
-.btn-xlarge {
-    box-sizing: border-box;
-    padding: 70px 40px 40px 40px;
-    width: 200px;
-    height: 200px;
-    max-width: 100%;
-    font-size: 160px;
 }
 
 img#logo-big {
@@ -50,33 +37,6 @@ img#logo-big {
     height: 100px;
 }
 
-form.appt .btn-group .btn {
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.pending, .declined, .approved {
-    display: inline-block;
-    border-radius: 200px;
-    width: 12px;
-    height: 12px;
-}
-
-.pending {
-    background: #b58900;
-}
-
-.declined {
-    background: #dc322f;
-}
-
-.approved {
-    background: #859900;
-}
-
+//iPhone 5 and below
 @media (max-width: 568px) {
-    .navbar h3 {
-        text-align: center;
-    }
 }
