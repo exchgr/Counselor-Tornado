@@ -1,11 +1,5 @@
 CounselorTornado::Application.routes.draw do
-  get "appointments/index"
-
-  get "appointments/show"
-
-  get "appointments/new"
-
-  get "appointments/edit"
+  resources :appointments
 
   devise_for :admins
 
