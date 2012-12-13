@@ -11,10 +11,17 @@
  *= require_self
  */
 
+// Bootstrap customizations
 $linkColor: #c40000;
 
 @import "twitter/bootstrap";
 @import "twitter/bootstrap/responsive";
+
+// Font definitions
+@font-face {
+    font-family: 'Franchise';
+    src: asset-url('Franchise-Bold.ttf', font);
+}
 
 body {
     background: #b00000 image-url('noise.png');
@@ -24,6 +31,7 @@ body {
 header {
     margin-bottom: 20px !important;
 }
+
 textarea,
 input[type="text"],
 input[type="password"],
@@ -58,8 +66,13 @@ input[type="color"],
     @include box-sizing(border-box);
     position: absolute;
     float: none !important;
+    pointer-events: none;
     width: 100%;
     text-align: center;
+}
+
+.logo-text {
+    font-family: 'Franchise';
 }
 
 img#logo-big {

@@ -69,5 +69,8 @@ module CounselorTornado
 
     # Don't access DB when precompiling assets
     config.assets.initialize_on_precompile = false
+
+    # Include font assets
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
   end
 end
