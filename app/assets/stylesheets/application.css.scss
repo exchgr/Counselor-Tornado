@@ -71,6 +71,10 @@ input[type="color"],
     text-align: center;
 }
 
+.center-align {
+    text-align: center;
+}
+
 .logo-text {
     font-family: 'Franchise';
 }
@@ -79,6 +83,16 @@ img#logo-big {
     display: block;
     margin: 30px auto;
     height: 100px;
+}
+
+
+.btn-xlarge {
+    box-sizing: border-box;
+    padding: 70px 40px 40px 40px;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    font-size: 160px;
 }
 
 //iPhone 5 and below

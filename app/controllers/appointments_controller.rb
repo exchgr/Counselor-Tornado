@@ -3,6 +3,7 @@ class AppointmentsController < ApplicationController
 
   def index
     @user = current_user
+    @appointment = Appointment.new
   end
 
   def show

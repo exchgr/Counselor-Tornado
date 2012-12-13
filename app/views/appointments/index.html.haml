@@ -6,6 +6,15 @@
       .well
         - if @user.appointments.empty?
           %p You don't have any appointments! Click the button to request a new one.
+          .center-align
+            = link_to '+', '#new-appt', class: 'btn btn-large btn-xlarge btn-inverse', data: {toggle: 'modal'}
+            %h4 New appointment
+            .modal.hide.fade#new-appt
+              .modal-header
+                %button.close{type: 'button', data: {dismiss: 'modal'}} &times;
+                %h3 Request Appointment
+              .modal-body
+                = render 'new'
         - else
           %table.table
             %thead
