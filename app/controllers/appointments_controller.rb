@@ -1,4 +1,6 @@
 class AppointmentsController < ApplicationController
+  before_filter :authenticate_user!
+
   def index
   end
 
