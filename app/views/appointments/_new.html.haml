@@ -1,0 +1,9 @@
+= form_for @appointment, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f|
+  = f.text_field :reason, placeholder: 'Reason for meeting'
+  = f.text_field :blocks, type: 'hidden'
+  = f.label :blocks
+  .btn-group{data: {toggle: 'buttons-checkbox'}}
+    %button.btn{type: 'button'}1
+    %button.btn{type: 'button'}2
+    %button.btn{type: 'button'}3
+    %button.btn{type: 'button'}4
