@@ -13,7 +13,7 @@ form {
     }
 }
 
-[class*='span'] {
+.container:last-of-type [class*='span'] {
     border-radius: 5px;
     padding: 20px;
     background: white;
