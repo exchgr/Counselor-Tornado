@@ -18,7 +18,12 @@
         .pull-right
           %ul.nav
             - if current_user
-              %li= link_to 'Sign out', destroy_user_session_path, method: :delete
+              %li.dropdown
+                %a.dropdown-toggle{data: {toggle: 'dropdown'}}
+                  %i.icon-user.icon-white
+                  %b.caret
+                %ul.dropdown-menu.pull-right
+                  %li= link_to 'Sign out', destroy_user_session_path, method: :delete
             - else
               %li= link_to 'Sign in', new_user_session_path
     - unless notice.nil? or notice.empty?
