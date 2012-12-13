@@ -2,5 +2,18 @@
 
 .container
   .row
-    .span8.offset2
-      %table.table
+    .span6.offset3
+      .well
+        - if @user.appointments.empty?
+          %p You don't have any appointments! Click the button to request a new one.
+        - else
+          %table.table
+            %thead
+              %tr
+                %th Date
+                %th Blocks
+                %th Status
+            %tbody
+              - @user.appointments.each do |appointment|
+                %tr
+                  %td= appointment
