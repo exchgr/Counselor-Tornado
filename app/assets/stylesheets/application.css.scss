@@ -50,7 +50,15 @@ input[type="color"],
     @include box-sizing(border-box);
 }
 
+.navbar-inner {
+    position: relative;
+}
+
 .center {
+    @include box-sizing(border-box);
+    position: absolute;
+    float: none !important;
+    width: 100%;
     text-align: center;
 }
 
