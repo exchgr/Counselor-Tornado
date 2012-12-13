@@ -1,4 +1,12 @@
 CounselorTornado::Application.routes.draw do
+  get "appointments/index"
+
+  get "appointments/show"
+
+  get "appointments/new"
+
+  get "appointments/edit"
+
   devise_for :admins
 
   devise_for :counselors
